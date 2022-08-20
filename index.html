@@ -157,7 +157,7 @@
       @media only screen and (max-width: 992px) {
         .pro-spec {
           list-style: none !important;
-          background-color: #f1f1f1 !important;
+          /* background-color: #f1f1f1 !important; */
         }
       }
 
@@ -248,13 +248,14 @@
       .offer-bg-animation {
         color: #fff;
         display: block;
-        background: linear-gradient(
+        background: #3794d1;
+        /* background: linear-gradient(
           -45deg,
           #3695d4,
           #3695d4ba,
           #3695d4f2,
           #3695d4a8
-        );
+        ); */
         background-size: 400% 400%;
         -webkit-animation: Gradient 3s ease infinite;
         -moz-animation: Gradient 3s ease infinite;
@@ -323,28 +324,14 @@
                 ><i class="mi mi-location nav-icon"></i> Location</a
               >
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="#sitevisit"
                 ><i class="mi mi-sitevisit nav-icon"></i> Virtual Site Tour</a
               >
-            </li>
+            </li> -->
             <li class="nav-item overflow-hidden">
-              <a
-                class="nav-link enqModal"
-                href="#"
-                data-form="md"
-                data-title="Download brochure"
-                data-btn="Download now"
-                data-enquiry="Ebook Download"
-                data-redirect="brochure"
-                data-redirect-file="brochure.pdf"
-                data-toggle="modal"
-                data-target="#enqModal"
-                ><i
-                  class="mi mi-download nav-icon d-inline-block animated slideInDown infinite"
-                ></i>
-                Brochure</a
-              >
+              <a class="nav-link enqModal active" href="#" data-form="md" data-title="Download brochure" data-btn="Download now" data-enquiry="Ebook Download" data-redirect="brochure" data-redirect-file="brochure.pdf" data-toggle="modal" data-target="#enqModal"><i class="mi mi-download nav-icon d-inline-block animated slideInDown infinite"></i>
+                Brochure</a>
             </li>
           </ul>
         </div>
@@ -385,7 +372,7 @@
         <span class="pro-title">Gera Imperium Gateway</span>
         <span class="pro-add">At Kasarwadi, PCMC, Pune</span>
         <span class="pro-dev">By Gera Developments Pvt. Ltd</span>
-        <ul class="pro-spec text-white">
+        <ul class="pro-spec text-white" style="font-size: 13px;">
           <li>
             <span class="list-icon">▸</span>
              The prime location of PCMC, Pune</span>
@@ -418,7 +405,7 @@
         <!-- <span class="pro-tag-line">Luxurious 2, 3 & 4 BHK Start</span> -->
         <span class="pro-price"> Starts From 49 Lakhs*</span>
         <button
-          class="btn btn-info micro-form-btn enqModal 	 effectScale"
+          class="btn btn-info micro-form-btn enqModal effectScale"
           data-form="lg"
           data-title="Mail me pricing details"
           data-btn="Send now"
@@ -438,7 +425,7 @@
           >Register here for Best Offers</span
         >
         <form
-          action="https://centralparkchinchwad.co.in/contact.php"
+          action="contact.php"
           method="POST"
           class="form-side"
         >
@@ -553,7 +540,7 @@
           </div>
         </div> -->
       </section>
-      <section class="section shadow-sm lazyload">
+      <section class="section shadow-sm lazyload" id="price">
         <span class="section-link" id="pricing"></span>
         <span class="head text-capitalize">Price</span>
         <div class="row">
@@ -578,7 +565,7 @@
                   <td
                     class="border border-left-0 border-top-0 border-bottom-0 price-type"
                   >
-                    office Spaces
+                    Office Spaces
                   </td>
                   <td
                     class="border border-left-0 border-top-0 border-bottom-0 price-carpet"
@@ -610,47 +597,41 @@
             </table>
           </div>
           <div class="col-md-4">
-            <a
-              href="#"
-              class="text-decoration-none enqModal"
-              data-form="lg"
-              data-title="Send me costing details"
-              data-btn="Send now"
-              data-enquiry="Costing Details"
-              data-toggle="modal"
-              data-target="#enqModal"
+            <table
+              class="table table-striped table-borderless border micro-price-table"
             >
-              <div class="at-property-item shadow-sm border border-grey mt-1">
-                <div class="at-property-img">
-                  <picture>
-                    <source
-                      class="lazyload w-100"
-                      data-srcset="assets/img/costing.jfif"
-                      type="image/webp"
-                    />
-                    <img
-                      data-sizes="auto"
-                      class="lazyload w-100"
-                      data-srcset="assets/img/costing.jfif"
-                    />
-                  </picture>
-                  <div class="at-property-overlayer"></div>
-                  <span class="btn btn-default at-property-btn"
-                    >Enquire Now</span
-                  >
-                </div>
-                <div class="at-property-dis effetGradient">
-                  <h5>Complete Costing Details</h5>
-                </div>
-              </div>
-            </a>
+              <thead>
+                <tr class="text-center">
+                  <th scope="col" class="border border-bottom-0 mb-w">Complete Costing Details </th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center">
+                    <button
+                      class="btn btn-sm btn-info effetGradient effectScale enqModal"
+                      data-form="lg"
+                      data-title="Send me costing details"
+                      data-btn="Send now"
+                      data-enquiry="Request Price"
+                      data-redirect="enquiry"
+                      data-toggle="modal"
+                      data-target="#enqModal"
+                    >
+                      Enquire Now
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
       <section
         class="section shadow-sm lazyload"
         data-script="assets/js/jquery.fancybox.min.js"
-        data-link="assets/css/jquery.fancybox.min.css"
+        data-link="assets/css/jquery.fancybox.min.css" id="sitefloorplan"
       >
         <span class="section-link" id="sitefloorplan"></span>
         <span class="head text-capitalize">Site &amp; Floor Plan</span>
@@ -896,7 +877,7 @@
         </div>
       </div> -->
 
-      <section class="section shadow-sm lazyload">
+      <section class="section shadow-sm lazyload" id="amenities">
         <span class="section-link" id="amenities"></span>
         <span class="head text-capitalize">Amenities</span>
         <div id="ami-3" class="ami-3 owl-carousel owl-theme">
@@ -1009,9 +990,9 @@
       <section
         class="section shadow-sm lazyload"
         data-script="assets/js/jquery.fancybox.min.js"
-        data-link="assets/css/jquery.fancybox.min.css"
+        data-link="assets/css/jquery.fancybox.min.css" id="location"
       >
-        <span class="section-link" id="location"></span>
+        <span class="section-link"></span>
         <span class="head text-capitalize">Location</span>
         <div class="row mb-3">
           <div class="col-md-12 col-sm-12">
@@ -1288,35 +1269,10 @@
         </form>
       </div>
       <ul class="mob-action nav nav-fill d-sm-block d-lg-none">
-        <!-- <li
-          class="nav-item"
-          onclick="javascript:location.href='tel:+919326734616'"
-        >
-          <span class="mi mi-call action-icon"></span> Call
-        </li>
-        <li
-          class="nav-item enqModal"
-          data-form="lg"
-          data-title="Mail me pricing details"
-          data-btn="Send now"
-          data-enquiry="Enquire Now"
-          data-redirect="enquiry"
-          data-toggle="modal"
-          data-target="#enqModal"
-        >
-          <span class="mi mi-enquire action-icon"></span> Enquire
-        </li> -->
-        <li
-          class="nav-item"
-          onclick="window.open('https://wa.me/+919881795556?text=I'm%20interested%20in');
-        >
-          <span class="mi mi-whatsapp action-icon" style="font-size: 45px;"
-            ><span class="path1"></span><span class="path2"></span
-            ><span class="path3"></span
-          ></span>
-          
-        </li>
-      </ul>
+        <li class="nav-item" onclick="javascript:location.href='tel:+919326734616'"><span class="mi mi-call action-icon"></span> Call</li>
+        <li class="nav-item enqModal" data-form="lg" data-title="Mail me pricing details" data-btn="Send now" data-enquiry="Enquire Now" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal"><span class="mi mi-enquire action-icon"></span> Enquire</li>
+        <li class="nav-item" onclick="window.open('https://api.whatsapp.com/send?phone=+918766846279&amp;text=Hi!%20I\'m%20Interested%20In%20Runwal%20New%20Beginnings%20at%20Pimpri-Chinchwad,%20Pune.%20Please%20Share%20Details.', '_blank');"><span class="mi mi-whatsapp action-icon"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span> WhatsApp</li>
+    </ul>
       <div
         class="modal fade"
         id="enqModal"
@@ -1368,7 +1324,7 @@
                     <span class="text-danger">Assured Rental For 3 Years!</span></span
                   >
                   <form
-                    action=""
+                    action="contact.php"
                     method="POST"
                     class="form-modal"
                   >
@@ -1403,14 +1359,7 @@
                         placeholder="E-Mail Address"
                       />
                     </div>
-                    <div class="form-group form-lg">
-                      <textarea
-                        name="enq_comment"
-                        col="5"
-                        class="form-control rounded-0 micro-form-field"
-                        placeholder="Comment"
-                      ></textarea>
-                    </div>
+
                     <input type="hidden" id="enquireName" value="Enquire Now" />
                     <button
                       type="submit"
@@ -1422,9 +1371,9 @@
                   </form>
                 </div>
               </div>
-              <!-- <a href="tel:+919326734616" class="modal-call-btn"
+              <a href="tel:+919326734616" class="modal-call-btn"
                 ><i class="mi mi-call"></i> +91 9326734616</a
-              > -->
+              >
             </div>
           </div>
         </div>

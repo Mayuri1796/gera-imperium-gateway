@@ -12,10 +12,10 @@ if(!preg_match('/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i',$email )){
 }
 if($errors==1) echo $error;
 else{
-	$values = array ('enq_name','mobile','enq_email', 'comment');
-	$required = array('enq_name','mobile','enq_email', 'comment');
+	$values = array ('enq_name','mobile','enq_email');
+	$required = array('enq_name','mobile','enq_email');
 
-	$your_email = "mayuriyeole32@gmail.com";
+	$your_email = " atcomforthomes@gmail.com";
 	$email_subject = "New Message: ".$_POST['subject'];
 	$email_content = "Gera Imperium Gateway (Website) new message:\n";
 
