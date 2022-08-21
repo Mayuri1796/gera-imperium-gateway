@@ -24,9 +24,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="icon" href="assets/img/favicon.png" sizes="16x16" />
-    <title>
-      Gera Imperium Gateway
-    </title>
+    <title>Gera Imperium Gateway</title>
 
     <link rel="preload" href="assets/css/style.css" as="style" />
     <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
@@ -60,7 +58,7 @@
       crossorigin
     />
     <link rel="stylesheet" href="assets/css/style.css" />
-	<link
+    <link
       rel="stylesheet"
       type="text/css"
       href="fonts/font-awesome/css/font-awesome.min.css"
@@ -173,7 +171,8 @@
           width: 27vw;
           top: 8px;
           left: 10px;
-          background-color: rgba(0, 0, 0, 0.65);
+          /* background-color: rgba(0, 0, 0, 0.65); */
+          background: #fff;
           color: #000;
           text-align: center;
           border-radius: 8px;
@@ -184,11 +183,11 @@
         .pro-status {
           display: block;
           text-shadow: none;
-          color: var(--colorPrimary);
-          background-color: transparent;
+          color: #fff;
+          /* background-color: transparent; */
           padding: 0.6vw 2.5vw 0.3vw 2vw;
           font-weight: 700;
-		  background: #3695d4;
+          background: #3695d4;
         }
 
         .pro-title,
@@ -314,11 +313,11 @@
                 ><i class="mi mi-ami nav-icon"></i> Amenities</a
               >
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#gallery"
-                ><i class="mi mi-gallery nav-icon"></i> Gallery</a
+            <li class="nav-item">
+              <a class="nav-link" href="#site"
+                ><i class="mi mi-gallery nav-icon"></i> Virtual Site Tour</a
               >
-            </li> -->
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#location"
                 ><i class="mi mi-location nav-icon"></i> Location</a
@@ -330,8 +329,22 @@
               >
             </li> -->
             <li class="nav-item overflow-hidden">
-              <a class="nav-link enqModal active" href="#" data-form="md" data-title="Download brochure" data-btn="Download now" data-enquiry="Ebook Download" data-redirect="brochure" data-redirect-file="brochure.pdf" data-toggle="modal" data-target="#enqModal"><i class="mi mi-download nav-icon d-inline-block animated slideInDown infinite"></i>
-                Brochure</a>
+              <a
+                class="nav-link enqModal active"
+                href="#"
+                data-form="md"
+                data-title="Download brochure"
+                data-btn="Download now"
+                data-enquiry="Ebook Download"
+                data-redirect="brochure"
+                data-redirect-file="brochure.pdf"
+                data-toggle="modal"
+                data-target="#enqModal"
+                ><i
+                  class="mi mi-download nav-icon d-inline-block animated slideInDown infinite"
+                ></i>
+                Brochure</a
+              >
             </li>
           </ul>
         </div>
@@ -349,19 +362,19 @@
               <source
                 class="lazyload d-block micro-main-slider-img"
                 media="(max-width: 750px)"
-                data-srcset="assets/img/modal-img.jpg"
+                data-srcset="assets/img/main-bnr.jpeg"
                 type="image/webp"
               />
               <source
                 class="lazyload d-block micro-main-slider-img"
                 media="(min-width: 751px)"
-                data-srcset="assets/img/modal-img.jpg"
+                data-srcset="assets/img/main-bnr.jpeg"
                 type="image/webp"
               />
               <img
                 data-sizes="auto"
                 class="lazyload d-block micro-main-slider-img"
-                data-srcset="assets/img/modal-img.jpg"
+                data-srcset="assets/img/main-bnr.jpeg"
               />
             </picture>
           </div>
@@ -372,18 +385,19 @@
         <span class="pro-title">Gera Imperium Gateway</span>
         <span class="pro-add">At Kasarwadi, PCMC, Pune</span>
         <span class="pro-dev">By Gera Developments Pvt. Ltd</span>
-        <ul class="pro-spec text-white" style="font-size: 13px;">
+        <ul class="pro-spec" style="font-size: 13px">
           <li>
-            <span class="list-icon">▸</span>
-             The prime location of PCMC, Pune</span>
+            <!-- <span class="list-icon">▸</span> -->
+            <span class="list-icon"></span>
+            The prime location of PCMC, Pune
           </li>
           <li>
-            <span class="list-icon">▸</span>
-            India’s first 7-year warranty</span>
+            <span class="list-icon"></span>
+            India’s first 7-year warranty
           </li>
           <li>
-            <span class="list-icon">▸</span>
-            Green and intelligent features </span>
+            <span class="list-icon"></span>
+            Green and intelligent features
           </li>
         </ul>
         <!-- <ul class="pro-spec">
@@ -399,7 +413,8 @@
             class="animated bounceIn infinite d-block"
             style="animation-duration: 3s"
           >
-            BIGGEST COMMERCIAL PROJECT AT PCMC IN PUNE
+            BIGGEST COMMERCIAL PROJECT AT PCMC IN PUNE WITH 3 Years Assured
+            Rental
           </span>
         </div>
         <!-- <span class="pro-tag-line">Luxurious 2, 3 & 4 BHK Start</span> -->
@@ -424,11 +439,7 @@
         <span class="d-block form-heading font-weight-bold"
           >Register here for Best Offers</span
         >
-        <form
-          action="contact.php"
-          method="POST"
-          class="form-side"
-        >
+        <form action="contact.php" method="POST" class="form-side">
           <div class="form-group">
             <input
               type="text"
@@ -512,33 +523,57 @@
           ></span>
           Download Brochure
         </button>
-        <!-- <h3 class="text-uppercase mt-4 text-center">Project Highlights</h3>
-        <div class="row bg-light mt-3">
+        <h3 class="text-uppercase mt-4 text-center">Project Highlights</h3>
+        <div class="row bg-light mt-3 project">
           <div
             class="col-md-4 col-sm-12 text-center text-uppercase border border-white p-4"
           >
-            <img src="assets/img/extra/png1.png" class="w-25 mb-2" />
+            <img src="assets/img/1.png" class="w-25 mb-2" />
             <span class="d-block font-weight-bold">
-              26 Acres of Development</span
+              City’s first Metro Connected Project</span
             >
           </div>
           <div
             class="col-md-4 col-sm-12 text-center text-uppercase border border-white p-4"
           >
-            <img src="assets/img/extra/png3.png" class="w-25 mb-2" />
+            <img src="assets/img/2.png" class="w-25 mb-2" />
             <span class="d-block font-weight-bold"
-              >Around 8 Acres of Residential Development</span
+              >12 acre Land parcel - 4.24lacs Sq.Ft</span
             >
           </div>
           <div
             class="col-md-4 col-sm-12 text-center text-uppercase border border-white p-4"
           >
-            <img src="assets/img/extra/png4.png" class="w-25 mb-2" />
+            <img src="assets/img/3.png" class="w-25 mb-2" />
             <span class="d-block font-weight-bold"
-              >Approx 5 Acres of Open Green Spaces</span
+              >Boutique offices to meet business needs of the SME’s</span
             >
           </div>
-        </div> -->
+        </div>
+        <div class="row bg-light mt-3 project">
+          <div
+            class="col-md-4 col-sm-12 text-center text-uppercase border border-white p-4"
+          >
+            <img src="assets/img/4.png" class="w-25 mb-2" />
+            <span class="d-block font-weight-bold">
+              Retail & F&B spaces sold out with anchor brands</span
+            >
+          </div>
+          <div
+            class="col-md-4 col-sm-12 text-center text-uppercase border border-white p-4"
+          >
+            <img src="assets/img/5.png" class="w-25 mb-2" />
+            <span class="d-block font-weight-bold">Bio- Diversity Spine</span>
+          </div>
+          <div
+            class="col-md-4 col-sm-12 text-center text-uppercase border border-white p-4"
+          >
+            <img src="assets/img/6.png" class="w-25 mb-2" />
+            <span class="d-block font-weight-bold"
+              >Great inter-city and intra-city connectivity</span
+            >
+          </div>
+        </div>
       </section>
       <section class="section shadow-sm lazyload" id="price">
         <span class="section-link" id="pricing"></span>
@@ -602,8 +637,9 @@
             >
               <thead>
                 <tr class="text-center">
-                  <th scope="col" class="border border-bottom-0 mb-w">Complete Costing Details </th>
-                  
+                  <th scope="col" class="border border-bottom-0 mb-w">
+                    Complete Costing Details
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -631,7 +667,8 @@
       <section
         class="section shadow-sm lazyload"
         data-script="assets/js/jquery.fancybox.min.js"
-        data-link="assets/css/jquery.fancybox.min.css" id="sitefloorplan"
+        data-link="assets/css/jquery.fancybox.min.css"
+        id="sitefloorplan"
       >
         <span class="section-link" id="sitefloorplan"></span>
         <span class="head text-capitalize">Site &amp; Floor Plan</span>
@@ -735,6 +772,98 @@
                 </div>
               </div>
             </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shadow-sm lazyload" id="overview">
+        <!-- <span class="head text-capitalize d-none d-md-block">Overview</span> -->
+
+        <h3 class="text-uppercase mt-4 text-center">Project Specifications</h3>
+        <div class="row bg-light mt-3 project">
+          <div
+            class="col-md-3 col-sm-12 text-center text-uppercase border border-white"
+          >
+            <div class="spec">
+              <img src="assets/img/spec4.png" class="w-25 mb-2" />
+              <span class="d-block font-weight-bold">
+                Elegantly encased in glass on one side</span
+              >
+            </div>
+          </div>
+          <div
+            class="col-md-3 col-sm-12 text-center text-uppercase border border-white"
+          >
+            <div class="spec">
+              <img src="assets/img/spec1.png" class="w-25 mb-2" />
+              <span class="d-block font-weight-bold">
+                A glass façade overlooking a magnificent view of the
+                neighbourhood</span
+              >
+            </div>
+          </div>
+          <div
+            class="col-md-3 col-sm-12 text-center text-uppercase border border-white"
+          >
+            <div class="spec">
+              <img src="assets/img/spec2.png" class="w-25 mb-2" />
+              <span class="d-block font-weight-bold">
+                Wi-Fi enabled shops & offices</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="col-md-3 col-sm-12 text-center text-uppercase border border-white"
+          >
+            <div class="spec">
+              <img src="assets/img/spec3.png" class="w-25 mb-2" />
+              <span class="d-block font-weight-bold">
+                Impressive 10 ft. Floor height (slab to slab)</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row bg-light mt-3 project">
+          <div
+            class="col-md-3 col-sm-12 text-center text-uppercase border border-white"
+          >
+            <div class="spec">
+              <img src="assets/img/spec5.png" class="w-25 mb-2" />
+              <span class="d-block font-weight-bold">
+                Fire-fighting systems provided for safety</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="col-md-3 col-sm-12 text-center text-uppercase border border-white"
+          >
+            <div class="spec">
+              <img src="assets/img/spec6.png" class="w-25 mb-2" />
+              <span class="d-block font-weight-bold">
+                Provision for toilet and pantry with size of office.</span
+              >
+            </div>
+          </div>
+          <div
+            class="col-md-3 col-sm-12 text-center text-uppercase border border-white"
+          >
+            <div class="spec">
+              <img src="assets/img/spec7.png" class="w-25 mb-2" />
+              <span class="d-block font-weight-bold"> 100% DG backup</span>
+            </div>
+          </div>
+          <div
+            class="col-md-3 col-sm-12 text-center text-uppercase border border-white"
+          >
+            <div class="spec">
+              <img src="assets/img/spec8.png" class="w-25 mb-2" />
+              <span class="d-block font-weight-bold">
+                Direct connectivity from Bhosari Metro Station through escalator
+                for Gera’s Imperium Gateway</span
+              >
+            </div>
           </div>
         </div>
       </section>
@@ -925,77 +1054,444 @@
           </div>
         </div>
       </section>
-      <!-- <section class="section shadow-sm lazyload">
-        <span class="section-link" id="gallery"></span>
-        <span class="head text-capitalize">Gallery</span>
+      <section class="section shadow-sm lazyload">
+        <span class="section-link" id="site"></span>
+        <span class="head text-capitalize">Virtual Site Tour</span>
         <div class="ami-2 owl-carousel owl-theme">
           <div class="item flex-fill">
-            <a data-fancybox="gallery-0" href="assets/img/gallery/1.jpg">
+            <a data-fancybox="gallery-0" href="assets/img/gallery1.jpg">
               <img
-                data-src="assets/img/gallery/1.jpg"
+                data-src="assets/img/gallery1.jpg"
                 class="img-thumbnail gallery-thumb border border-light lazyload"
               />
             </a>
           </div>
           <div class="item flex-fill">
-            <a data-fancybox="gallery-0" href="assets/img/gallery/2.jpg">
+            <a data-fancybox="gallery-0" href="assets/img/gallery2.jpg">
               <img
-                data-src="assets/img/gallery/2.jpg"
+                data-src="assets/img/gallery2.jpg"
                 class="img-thumbnail gallery-thumb border border-light lazyload"
               />
             </a>
           </div>
           <div class="item flex-fill">
-            <a data-fancybox="gallery-0" href="assets/img/gallery/3.jpg">
+            <a data-fancybox="gallery-0" href="assets/img/gallery3.jpg">
               <img
-                data-src="assets/img/gallery/3.jpg"
+                data-src="assets/img/gallery3.jpg"
                 class="img-thumbnail gallery-thumb border border-light lazyload"
               />
             </a>
           </div>
           <div class="item flex-fill">
-            <a data-fancybox="gallery-0" href="assets/img/gallery/4.jpg">
+            <a data-fancybox="gallery-0" href="assets/img/gallery4.jpg">
               <img
-                data-src="assets/img/gallery/4.jpg"
+                data-src="assets/img/gallery4.jpg"
                 class="img-thumbnail gallery-thumb border border-light lazyload"
               />
             </a>
           </div>
           <div class="item flex-fill">
-            <a data-fancybox="gallery-0" href="assets/img/gallery/5.jpg">
+            <a data-fancybox="gallery-0" href="assets/img/gallery5.jpg">
               <img
-                data-src="assets/img/gallery/5.jpg"
+                data-src="assets/img/gallery5.jpg"
                 class="img-thumbnail gallery-thumb border border-light lazyload"
               />
             </a>
           </div>
           <div class="item flex-fill">
-            <a data-fancybox="gallery-0" href="assets/img/gallery/6.jpg">
+            <a data-fancybox="gallery-0" href="assets/img/gallery6.jpg">
               <img
-                data-src="assets/img/gallery/6.jpg"
-                class="img-thumbnail gallery-thumb border border-light lazyload"
-              />
-            </a>
-          </div>
-          <div class="item flex-fill">
-            <a data-fancybox="gallery-0" href="assets/img/gallery/7.jpg">
-              <img
-                data-src="assets/img/gallery/7.jpg"
+                data-src="assets/img/gallery6.jpg"
                 class="img-thumbnail gallery-thumb border border-light lazyload"
               />
             </a>
           </div>
         </div>
-      </section> -->
+
+        <div class="row mr0">
+          <div class="col-md-12">
+            <video
+              playsinline=""
+              autoplay=""
+              muted=""
+              loop=""
+              width="100%"
+              height="315"
+            >
+              <source src="assets/img/gera-video.mp4" type="video/mp4" />
+            </video>
+            <!-- <iframe
+              height="315"
+              src="https://www.youtube.com/embed/fzoZ4y_GSgU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen=""
+              playsinline=""
+              autoplay=""
+              muted=""
+              loop=""
+              width="100%"
+            ></iframe> -->
+          </div>
+        </div>
+      </section>
+
       <section
         class="section shadow-sm lazyload"
         data-script="assets/js/jquery.fancybox.min.js"
-        data-link="assets/css/jquery.fancybox.min.css" id="location"
+        data-link="assets/css/jquery.fancybox.min.css"
+        id="location"
       >
         <span class="section-link"></span>
         <span class="head text-capitalize">Location</span>
         <div class="row mb-3">
-          <div class="col-md-12 col-sm-12">
+          <div class="col-md-6">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="1000"
+              class="aos-init aos-animate"
+            >
+              <div class="row">
+                <div class="col-md-12 extra223">
+                  <div
+                    class="panel-group"
+                    id="accordion"
+                    role="tablist"
+                    aria-multiselectable="true"
+                  >
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                          <a
+                            class="first collapsed"
+                            role="button"
+                            data-toggle="collapse"
+                            data-parent="#accordion"
+                            href="#collapseOne"
+                            aria-expanded="false"
+                            aria-controls="collapseOne"
+                          >
+                            Metro Stations
+                            <span> </span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div
+                        id="collapseOne"
+                        class="panel-collapse collapse"
+                        role="tabpanel"
+                        aria-labelledby="headingOne"
+                        aria-expanded="false"
+                        style="height: 0px"
+                      >
+                        <div class="panel-body">
+                          <ul class="loc-list">
+                            <li>
+                              <i class="fa fa-map-marker" aria-hidden="true"></i
+                              >Bhosari Metro Station <span> 0 km</span>
+                            </li>
+                            <li>
+                              <i class="fa fa-map-marker" aria-hidden="true"></i
+                              >Pune Station <span> 13 km</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                          <a
+                            class="collapsed"
+                            role="button"
+                            data-toggle="collapse"
+                            data-parent="#accordion"
+                            href="#collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo"
+                          >
+                            Railway Station
+                            <span> </span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div
+                        id="collapseTwo"
+                        class="panel-collapse collapse"
+                        role="tabpanel"
+                        aria-labelledby="headingTwo"
+                        aria-expanded="false"
+                      >
+                        <div class="panel-body">
+                          <ul class="loc-list">
+                            <li>
+                              <i class="fa fa-map-marker" aria-hidden="true"></i
+                              >Pune Station <span>13.0 km</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                          <a
+                            class="collapsed"
+                            role="button"
+                            data-toggle="collapse"
+                            data-parent="#accordion"
+                            href="#collapseThree"
+                            aria-expanded="false"
+                            aria-controls="collapseThree"
+                          >
+                            <i class="mi mi-"></i> Hospitals
+                            <span> </span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div
+                        id="collapseThree"
+                        class="panel-collapse collapse"
+                        role="tabpanel"
+                        aria-labelledby="headingThree"
+                        aria-expanded="false"
+                      >
+                        <div class="panel-body">
+                          <ul class="loc-list">
+                            <li>
+                              <i class="fa fa-map-marker" aria-hidden="true"></i
+                              >Yashtwantrao Memorial Hospital
+                              <span>1.8 km</span>
+                            </li>
+                            <li>
+                              <i class="fa fa-map-marker" aria-hidden="true"></i
+                              >Birla Hospital
+                              <span> 7.5 km</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
+                          <a
+                            class="collapsed"
+                            role="button"
+                            data-toggle="collapse"
+                            data-parent="#accordion"
+                            href="#collapseFour"
+                            aria-expanded="false"
+                            aria-controls="collapseFour"
+                          >
+                            Road Connectivity
+                            <span> </span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div
+                        id="collapseFour"
+                        class="panel-collapse collapse"
+                        role="tabpanel"
+                        aria-labelledby="headingFour"
+                        aria-expanded="false"
+                      >
+                        <div class="panel-body">
+                          <ul class="loc-list">
+                            <li>
+                              <i class="fa fa-map-marker" aria-hidden="true"></i
+                              >Pune-Nashik Highway <span>500 m</span>
+                            </li>
+                            <li>
+                              <i class="fa fa-map-marker" aria-hidden="true"></i
+                              >Pune-Mumbai Expressway
+                              <span> 18 km</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingFive">
+                        <h4 class="panel-title">
+                          <a
+                            class="collapsed"
+                            role="button"
+                            data-toggle="collapse"
+                            data-parent="#accordion"
+                            href="#collapseFive"
+                            aria-expanded="false"
+                            aria-controls="collapseFive"
+                          >
+                            IT Parks
+                            <span> </span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div
+                        id="collapseFive"
+                        class="panel-collapse collapse"
+                        role="tabpanel"
+                        aria-labelledby="headingFive"
+                        aria-expanded="false"
+                      >
+                        <div class="panel-body">
+                          <ul class="loc-list">
+                            <li>
+                              <i class="fa fa-map-marker" aria-hidden="true"></i
+                              >Talwade IT Park <span>12.5 km</span>
+                            </li>
+                            <li>
+                              <i class="fa fa-map-marker" aria-hidden="true"></i
+                              >Hinjewadi IT Park
+                              <span> 14.5 km</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingSix">
+                        <h4 class="panel-title">
+                          <a
+                            class="collapsed"
+                            role="button"
+                            data-toggle="collapse"
+                            data-parent="#accordion"
+                            href="#collapseSix"
+                            aria-expanded="false"
+                            aria-controls="collapseSix"
+                          >
+                            Malls
+                            <span> </span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div
+                        id="collapseSix"
+                        class="panel-collapse collapse"
+                        role="tabpanel"
+                        aria-labelledby="headingSix"
+                        aria-expanded="false"
+                      >
+                        <div class="panel-body">
+                          <ul class="loc-list">
+                            <li>
+                              <i class="fa fa-map-marker" aria-hidden="true"></i
+                              >City One Mall <span>3.3 km</span>
+                            </li>
+                            <li>
+                              <i class="fa fa-map-marker" aria-hidden="true"></i
+                              >Elpro City Mall
+                              <span> 6.4 km</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingSeven">
+                        <h4 class="panel-title">
+                          <a
+                            class="collapsed"
+                            role="button"
+                            data-toggle="collapse"
+                            data-parent="#accordion"
+                            href="#collapseSeven"
+                            aria-expanded="false"
+                            aria-controls="collapseSeven"
+                          >
+                            Corporates
+                            <span> </span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div
+                        id="collapseSeven"
+                        class="panel-collapse collapse"
+                        role="tabpanel"
+                        aria-labelledby="headingSeven"
+                        aria-expanded="false"
+                      >
+                        <div class="panel-body">
+                          <ul class="loc-list">
+                            <li>
+                              <i class="fa fa-map-marker" aria-hidden="true"></i
+                              >PCMC Corporation <span> 2.5 km</span>
+                            </li>
+                            <li>
+                              <i class="fa fa-map-marker" aria-hidden="true"></i
+                              >Tata Motors
+                              <span> 4.0 km</span>
+                            </li>
+                            <li>
+                              <i class="fa fa-map-marker" aria-hidden="true"></i
+                              >Bajaj
+                              <span> 7.5 km </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingEight">
+                        <h4 class="panel-title">
+                          <a
+                            class="collapsed"
+                            role="button"
+                            data-toggle="collapse"
+                            data-parent="#accordion"
+                            href="#collapseEight"
+                            aria-expanded="false"
+                            aria-controls="collapseEight"
+                          >
+                            Airport
+                            <span> </span>
+                          </a>
+                        </h4>
+                      </div>
+                      <div
+                        id="collapseEight"
+                        class="panel-collapse collapse"
+                        role="tabpanel"
+                        aria-labelledby="headingEight"
+                        aria-expanded="false"
+                      >
+                        <div class="panel-body">
+                          <ul class="loc-list">
+                            <li>
+                              <i class="fa fa-map-marker" aria-hidden="true"></i
+                              >Pune Airport <span> 15 km</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <ul class="newlist" >
+                  <li data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000"></li>
+                  <li data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Pune-Nashik Highway – 500 m</li>
+                  <li data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Yashtwantrao Memorial Hospital - 1.8 km</li>
+                  <li data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">PCMC Corporation - 2.5 km</li>
+                  <li data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">City One Mall - 3.3 km</li>
+                  <li data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Tata Motors – 4.0 km</li>
+                  <li data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Elpro City Mall - 6.4 km</li>
+                  <li data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Birla Hospital - 7.5 km</li>
+                  <li data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Bajaj - 7.5 km</li>
+                  <li data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Talwade IT Park - 12.5 km</li>
+                  <li data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Pune Station – 13.0 km</li>
+                  <li data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Hinjewadi IT Park - 14.5 km</li>
+                  <li data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Pune Airport - 15 km</li>
+                  <li data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Pune-Mumbai Expressway – 18 km</li>
+              </ul> -->
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
             <!-- <span class="d-block section-heading-sub text-capitalize"
               >Map View</span
             > -->
@@ -1198,7 +1694,7 @@
             </li>
             <li
               class="nav-item"
-              onclick="window.open('https://api.whatsapp.com/send?phone=+918766846279&text=Hi!%20I\'m%20Interested%20In%20Runwal%20New%20Beginnings%20at%20Pimpri-Chinchwad,%20Pune.%20Please%20Share%20Details.', '_blank');"
+              onclick="window.open('https://api.whatsapp.com/send?phone=+919326734616&text=Hi!%20I\'m%20Interested%20In%20Gera%20Imperium%20Gateway%20at%20Kasarwadi%20PCMC%20Pune.%20Please%20Share%20Details.', '_blank');"
             >
               <span class="mi mi-whatsapp action-icon"
                 ><span class="path1"></span><span class="path2"></span
@@ -1222,11 +1718,7 @@
         <span class="d-block form-heading font-weight-bold my-2"
           >Register here for Best Offers</span
         >
-        <form
-          action="register-here.php"
-          method="POST"
-          class="form-side"
-        >
+        <form action="register-here.php" method="POST" class="form-side">
           <div class="form-group">
             <input
               type="text"
@@ -1269,10 +1761,35 @@
         </form>
       </div>
       <ul class="mob-action nav nav-fill d-sm-block d-lg-none">
-        <li class="nav-item" onclick="javascript:location.href='tel:+919326734616'"><span class="mi mi-call action-icon"></span> Call</li>
-        <li class="nav-item enqModal" data-form="lg" data-title="Mail me pricing details" data-btn="Send now" data-enquiry="Enquire Now" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal"><span class="mi mi-enquire action-icon"></span> Enquire</li>
-        <li class="nav-item" onclick="window.open('https://api.whatsapp.com/send?phone=+918766846279&amp;text=Hi!%20I\'m%20Interested%20In%20Runwal%20New%20Beginnings%20at%20Pimpri-Chinchwad,%20Pune.%20Please%20Share%20Details.', '_blank');"><span class="mi mi-whatsapp action-icon"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span> WhatsApp</li>
-    </ul>
+        <li
+          class="nav-item"
+          onclick="javascript:location.href='tel:+919326734616'"
+        >
+          <span class="mi mi-call action-icon"></span> Call
+        </li>
+        <li
+          class="nav-item enqModal"
+          data-form="lg"
+          data-title="Mail me pricing details"
+          data-btn="Send now"
+          data-enquiry="Enquire Now"
+          data-redirect="enquiry"
+          data-toggle="modal"
+          data-target="#enqModal"
+        >
+          <span class="mi mi-enquire action-icon"></span> Enquire
+        </li>
+        <li
+          class="nav-item"
+          onclick="window.open('https://api.whatsapp.com/send?phone=+919326734616&text=Hi!%20I\'m%20Interested%20In%20Gera%20Imperium%20Gateway%20at%20Kasarwadi%20PCMC%20Pune.%20Please%20Share%20Details.', '_blank');"
+        >
+          <span class="mi mi-whatsapp action-icon"
+            ><span class="path1"></span><span class="path2"></span
+            ><span class="path3"></span
+          ></span>
+          WhatsApp
+        </li>
+      </ul>
       <div
         class="modal fade"
         id="enqModal"
@@ -1321,13 +1838,11 @@
                   <img src="assets/img/logo.png" class="modal-logo" />
                   <span class="modal-title-secondary"
                     >Register here and Avail the
-                    <span class="text-danger">Assured Rental For 3 Years!</span></span
+                    <span class="text-danger"
+                      >Assured Rental For 3 Years!</span
+                    ></span
                   >
-                  <form
-                    action="contact.php"
-                    method="POST"
-                    class="form-modal"
-                  >
+                  <form action="contact.php" method="POST" class="form-modal">
                     <div class="form-group">
                       <input
                         type="text"
@@ -1379,7 +1894,7 @@
         </div>
       </div>
     </main>
-	<!-- <ul class="social">
+    <!-- <ul class="social">
         <li><a href="https://wa.me/+919881795556?text=I'm%20interested%20in"><i class="mi mi-whatsapp action-icon"></i></a></li>
     </ul> -->
     <!-- <footer class="disclaimer pload">
