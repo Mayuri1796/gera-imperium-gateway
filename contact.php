@@ -15,9 +15,9 @@ else{
 	$values = array ('enq_name','mobile','enq_email');
 	$required = array('enq_name','mobile','enq_email');
 
-	$your_email = " atcomforthomes@gmail.com";
+	$your_email = "atcomforthomes@gmail.com";
 	$email_subject = "New Message: ".$_POST['subject'];
-	$email_content = "Gera Imperium Gateway (Website) new message:\n";
+	$email_content = "Gera Imperium Gateway (Website) new message: \n";
 
 	foreach($values as $key => $value){
 		if(in_array($value,$required)){
